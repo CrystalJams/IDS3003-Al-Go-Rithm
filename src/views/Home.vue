@@ -1,7 +1,7 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App Dummy"/>
+    <img alt="Placeholder logo" src="../assets/RFR.png">
+    <HelloWorld msg="This is the Dummy Intro Page, That Links to The Posts Viewer"/>
   </div>
 </template>
 
