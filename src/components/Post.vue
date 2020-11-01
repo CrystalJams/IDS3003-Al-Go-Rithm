@@ -23,12 +23,16 @@ export default {
   methods: {
       kevinMethod() {
         for(let i = 0; i < 69; i++){
-            console.log('bananas');
+            console.log('bananas' + i);
         }
+      },
+      jamesMethod() {
+        console.log("help");
       }
   },
   created() {
       this.kevinMethod();
+      this.jamesMethod();
   }
 }
 </script>
