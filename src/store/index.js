@@ -10,12 +10,11 @@ export default new Vuex.Store({
         key: 1,
         title: '...',
         author: 'Gordon',
-        postedAt: 2,
+        postedAt: 1604272999,
         likes: 100,
         dislikes: 100,
         type: 'picture',
         comments: Math.random(),
-        reasons: []
       },
       {
         key: 2,
@@ -26,7 +25,6 @@ export default new Vuex.Store({
         dislikes: 1400,
         type: 'picture',
         comments: 16,
-        reasons: []
       },
       {
         key: 3,
@@ -37,7 +35,7 @@ export default new Vuex.Store({
         dislikes: 15,
         type: 'text',
         comments: 23,
-        reasons: []
+
       },
       {
         key: 4,
@@ -48,7 +46,7 @@ export default new Vuex.Store({
         dislikes: 0,
         type: 'text',
         comments: 234,
-        reasons: []
+
       },
       {
         key: 5,
@@ -59,7 +57,7 @@ export default new Vuex.Store({
         dislikes: 59,
         type: 'picture',
         comments: Math.random(),
-        reasons: []
+
       },
       {
         key: 6,
@@ -70,7 +68,7 @@ export default new Vuex.Store({
         dislikes: 1200,
         type: 'picture',
         comments: 6500,
-        reasons: []
+
       },
       {
         key: 7,
@@ -81,7 +79,7 @@ export default new Vuex.Store({
         dislikes: 1234,
         type: 'text',
         comments: 54455,
-        reasons: []
+
       },
       {
         key: 8,
@@ -92,7 +90,7 @@ export default new Vuex.Store({
         dislikes: 2344,
         type: 'text',
         comments: 2344,
-        reasons: []
+
       },
       {
         key: 9,
@@ -103,7 +101,7 @@ export default new Vuex.Store({
         dislikes: 10333,
         type: 'picture',
         comments: 2342,
-        reasons: []
+
       },
       {
         key: 10,
@@ -114,7 +112,7 @@ export default new Vuex.Store({
         dislikes: 14002,
         type: 'picture',
         comments: 161,
-        reasons: []
+
       },
       {
         key: 11,
@@ -125,7 +123,6 @@ export default new Vuex.Store({
         dislikes: 152,
         type: 'text',
         comments: 2334,
-        reasons: []
       },
       {
         key: 12,
@@ -133,11 +130,10 @@ export default new Vuex.Store({
         author: 'Comments being called a dumbass',
         postedAt: 101231231123,
         likes: 2,
-        dislikes: 0,
+        dislikes: 50,
         type: 'text',
         comments: 50000000000,
-        reasons: []
-      },
+     },
       {
         key: 13,
         title: "Jesus it's cold",
@@ -147,13 +143,14 @@ export default new Vuex.Store({
         dislikes: 0,
         type: 'picture',
         comments: 75,
-        reasons: []
       }
     ]
   },
   mutations: {
+    
   },
   actions: {
+
   },
   modules: {
   }

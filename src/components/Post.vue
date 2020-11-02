@@ -9,6 +9,7 @@
     <p v-else-if="postMeat.type === 'link'">This is a link post</p>
     <p v-else>This is an invalid post type</p>
     <p>posted by:{{ postMeat.author }}</p>
+    <button @click="onClickDescrip()">about</button> 
   </div>
 </template>
 
@@ -21,18 +22,23 @@ export default {
     }
   },
   methods: {
-      kevinMethod() {
-        for(let i = 0; i < 69; i++){
-            console.log('bananas' + i);
-        }
-      },
-      jamesMethod() {
-        console.log("help");
+      //kevinMethod() {
+        //for(let i = 0; i < 69; i++){
+            //console.log('bananas' + i);
+        //}
+      //},
+      //jamesMethod() {
+        //console.log("help");
+      //}
+      onClickDescrip(){ //handles the instance button clicks to  request the description
+        this.$emit('selected');
       }
+
+
   },
   created() {
-      this.kevinMethod();
-      this.jamesMethod();
+      //this.kevinMethod();
+      //this.jamesMethod();
   }
 }
 </script>
