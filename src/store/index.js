@@ -13,13 +13,13 @@ export default new Vuex.Store({
         postedAt: 1604272999,
         likes: 100,
         dislikes: 100,
-        type: 'picture',
+        type: 'text',
         comments: Math.random(),
       },
       {
         key: 2,
-        title: 'Gayyy',
-        author: 'Gay Dewey',
+        title: 'Anybody ever notice the ceiling before?',
+        author: 'G.Dewey',
         postedAt: 1222217110,
         likes: 1000,
         dislikes: 1400,
@@ -40,7 +40,7 @@ export default new Vuex.Store({
       {
         key: 4,
         title: 'man i hate monday',
-        author: 'garman',
+        author: 'garfman',
         postedAt: 10,
         likes: 1000000000000000,
         dislikes: 0,
@@ -55,13 +55,13 @@ export default new Vuex.Store({
         postedAt: 85,
         likes: 304,
         dislikes: 59,
-        type: 'picture',
+        type: 'link',
         comments: Math.random(),
 
       },
       {
         key: 6,
-        title: 'Logitech mouse',
+        title: 'Logitech mouse how to click?????????????',
         author: 'HP Monitor',
         postedAt: 23409,
         likes: 1030,
@@ -94,7 +94,7 @@ export default new Vuex.Store({
       },
       {
         key: 9,
-        title: 'the one shitpost in general',
+        title: 'Just HAD to post my snail',
         author: 'Go Dan',
         postedAt: Math.random(),
         likes: 2340,
@@ -105,8 +105,8 @@ export default new Vuex.Store({
       },
       {
         key: 10,
-        title: 'James Risolio',
-        author: 'ThatsInteresting',
+        title: 'Made a Thing',
+        author: 'James R',
         postedAt: 122221234,
         likes: 10023,
         dislikes: 14002,
@@ -116,7 +116,7 @@ export default new Vuex.Store({
       },
       {
         key: 11,
-        title: 'my Feet are cold',
+        title: 'My Feet are cold :(',
         author: 'Feetman1337',
         postedAt: Math.random(),
         likes: 3333,
@@ -127,7 +127,7 @@ export default new Vuex.Store({
       {
         key: 12,
         title: 'man i hate monday 2',
-        author: 'Comments being called a dumbass',
+        author: 'secret garf fan',
         postedAt: 101231231123,
         likes: 2,
         dislikes: 50,
@@ -147,11 +147,51 @@ export default new Vuex.Store({
     ]
   },
   mutations: {
-    
+    pushPost(state, newPost){
+      state.posts.push(newPost);
+    },
+    splicePost(state, index){
+      state.posts.splice(index,1);
+    }
   },
   actions: {
+    pushPost(context){
+      context.commit('pushPost');
+    },
+    splicePost(context){
+      context.commit('splicePost');
+    },
+    generatePost(){
+
+
+    },
+    //generateRandomPost(){
+     // let newPost;
+     // newPost.key = (post[post.length - 1] + 1);
+     // newPost.title = "Title(in the future this will be randomly generated)"
+     // newPost.author = "Author(in the future this will be picked from a random list of users)"
+     // newPost.postedAt = Math.random()
+    //}
 
   },
   modules: {
-  }
+
+  },
+  /*methods:{
+    randomTitle(){
+      return "Random Title Generator Not Set Up Yet"
+    },
+    randomAuthor(){
+      return "Random Author Not Set Up Yet"
+    },
+    randomType(){
+      return 'picture'
+    },
+    randomTime(){
+      return 1134071203
+    },
+    randomLikes(){
+      return random()
+    }*/
+  
 })

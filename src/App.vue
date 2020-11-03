@@ -2,7 +2,7 @@
   <div id="app">
     <div id="nav">
       <router-link to="/">Intro Page</router-link> |
-      <router-link to="/posts">Posts Page</router-link>
+      <router-link to="/posts">Reddit Hot Sort</router-link>
     </div>
     <router-view/>
   </div>
@@ -17,8 +17,10 @@
   color: #2c3e50;
 }
 
+
 #nav {
   padding: 30px;
+  border: 30px black;
 }
 
 #nav a {
