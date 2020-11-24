@@ -2,7 +2,9 @@
   <div id="app">
     <div id="nav">
       <router-link to="/">Intro Page</router-link> |
-      <router-link to="/posts">Reddit Hot Sort</router-link>
+      <router-link to="/posts">Reddit Hot Sort</router-link> | 
+      <router-link to="/hacker-news">Hacker News Top Sort</router-link> | 
+      <router-link to="/makr">Make a Post!</router-link>
     </div>
     <router-view/>
   </div>

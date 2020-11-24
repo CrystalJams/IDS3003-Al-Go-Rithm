@@ -10,7 +10,7 @@ export default new Vuex.Store({
         key: 1,
         title: '...',
         author: 'Gordon',
-        postedAt: 1604272999,
+        postedAt: 1134071203,
         likes: 100,
         dislikes: 100,
         type: 'text',
@@ -20,7 +20,7 @@ export default new Vuex.Store({
         key: 2,
         title: 'Anybody ever notice the ceiling before?',
         author: 'G.Dewey',
-        postedAt: 1222217110,
+        postedAt: 12222171100000,
         likes: 1000,
         dislikes: 1400,
         type: 'picture',
@@ -152,7 +152,8 @@ export default new Vuex.Store({
     },
     splicePost(state, index){
       state.posts.splice(index,1);
-    }
+    },
+
   },
   actions: {
     pushPost(context){
@@ -161,16 +162,12 @@ export default new Vuex.Store({
     splicePost(context){
       context.commit('splicePost');
     },
-    generatePost(){
-
-
-    },
     //generateRandomPost(){
-     // let newPost;
-     // newPost.key = (post[post.length - 1] + 1);
-     // newPost.title = "Title(in the future this will be randomly generated)"
-     // newPost.author = "Author(in the future this will be picked from a random list of users)"
-     // newPost.postedAt = Math.random()
+      //let newPost;
+      //newPost.key = (post[post.length - 1] + 1);
+      //newPost.title = "Title(in the future this will be randomly generated)"
+      //newPost.author = "Author(in the future this will be picked from a random list of users)"
+      //newPost.postedAt = Math.random()
     //}
 
   },

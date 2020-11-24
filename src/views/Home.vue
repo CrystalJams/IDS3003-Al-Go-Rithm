@@ -7,8 +7,8 @@
     <p class="intro">Postr offers the unique experience of transparency!</p>
     <p class="intro">When you see a post on here and click a button attatched to it and a different program(also called Al Go Rithm for continuities sake) will tell you all about it!</p> 
     <p class="intro">Since you dont have to worry about upseting other users you also have full controll over each post!</p>
-    <p class="intro">Click up top to head to one(1) of the three(3) different sorting modes we have implemented and try it out!</p>
-    <p class="comment"> Developter Note: there is currently no functionality to edit the posts, they are generated from a random set of potential posts. Additionally there will be 2 more sorting modes in the final product </p>
+    <p class="intro">Click up top to head to one(1) of the Two(2) different sorting modes we have implemented and try it out!</p>
+    <p class="intro"> You can also use the Postr Makr to make your very own posts! </p>
 
 
   </div>

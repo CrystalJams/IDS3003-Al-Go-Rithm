@@ -6,10 +6,11 @@
     <p class="type" v-else-if="postMeat.type === 'text'">Post Type: Text</p>
     <p class="type" v-else-if="postMeat.type === 'link'">Post Type: Link</p>
     <p class="type" v-else>This is an invalid post type</p>
-    <p class="author">posted by:{{ postMeat.author }}       [This is the bare minimum for post sorting, I have several more post factors that will be implimented]</p>
+    <p class="author">posted by: {{ postMeat.author }}</p>
     <p class="likes">likes {{ postMeat.likes}} | dislikes {{ postMeat.dislikes }}</p>
-    <p class="date">posted on{{ postMeat.postedAt }} (this is a time represent in ms, this is a placeholder till i impliment the converter)</p>
+    <p class="date">posted on: {{ time(postMeat.postedAt) }}</p>
     <button @click="onClickDescrip()">about</button> 
+    <button @click="edit()">edit</button> 
   </div>
 </template>
 
@@ -53,6 +54,13 @@ export default {
       //}
       onClickDescrip(){ //handles the instance button clicks to  request the description
         this.$emit('selected');
+      },
+      edit(){//handles the instance click for post editing
+        this.$emit('edit');
+      },
+      time(current){
+        return new Date(current);
+
       }
 
 
